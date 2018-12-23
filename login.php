@@ -16,8 +16,7 @@ if(mysqli_connect_errno()){
 $p_id = $_POST['p_id'];
 $pass = $_POST['pass'];
 
-// $p_id = '1246';
-// $pass = '123456';
+
 
 $q = "SELECT police_1.a_id,police_1.p_name, police_1.p_phone, police_1.p_pic,
 area_1.a_name, area_1.des, area_1.coord
