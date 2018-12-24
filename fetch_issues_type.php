@@ -24,7 +24,7 @@
           $t = array();
 
           $t['id']      = $r['id'];
-          $t['title'] = $r['title'];
+          $t['title']   = $r['title'];
           
           array_push($response,$t);
         }
