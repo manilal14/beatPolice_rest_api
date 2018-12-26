@@ -6,7 +6,7 @@ $upload_path = 'photos/issues/';
 $con = mysqli_connect($DB_HOST,$DB_USER,$DB_PASS,$DB_NAME) or die('Unable to Connect...');
 extract($_POST);
 
-
+$time = time();
     
     $file_name = $_FILES['image']['name'];
     mkdir($upload_path,0777,true);
@@ -16,7 +16,6 @@ extract($_POST);
     }
     else
         echo "failure";
-
 
 
 

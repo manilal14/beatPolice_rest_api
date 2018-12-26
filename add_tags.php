@@ -5,7 +5,11 @@ $upload_path = 'photos/tags/';
 
 $con = mysqli_connect($DB_HOST,$DB_USER,$DB_PASS,$DB_NAME) or die('Unable to Connect...');
 extract($_POST);
-//$upload_path = $upload_path."/".$p_id."/";
+
+
+$unix = time();
+$date = date("d/n/Y", $unix);
+$time = date("g:iA", $unix);
 
 $response = array();
 

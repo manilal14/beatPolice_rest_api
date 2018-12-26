@@ -4,12 +4,14 @@ include "db_config_beat.php";
 
 $allot_id = $_POST['allot_id'];
 $pos = $_POST['pos'];
-// $allot_id = 20;
-// $pos = "asdfg";
+
 if($allot_id == "" || $pos == ""){
     echo "not allowed";
     die();
 }
+
+$t = time();
+$pos = $pos.$t."]";
 
 $conn = mysqli_connect($DB_HOST,$DB_USER,$DB_PASS,$DB_NAME);
 if(mysqli_connect_errno()){
