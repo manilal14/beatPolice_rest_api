@@ -28,7 +28,7 @@ if($result){
     $t['t_coord'] = $r['t_coord'];
     $t['t_type']  = $r['t_type'];
     $t['name']    = $r['name'];
-    $t['des']   = $r['des'];
+    $t['des']     = $r['des'];
 
     $t['phone']   = $r['phone'];
     $t['gender']   = $r['gender'];
